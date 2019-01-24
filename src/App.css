@@ -1,9 +1,10 @@
 :root {
-  --grey:  rgba(240,240,240,0.6);
+  --grey: rgba(240, 240, 240, 0.6);
+  --darkGrey: rgba(210, 210, 210, 1);
 }
 
 * {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   margin: 0;
   padding: 0;
 }
@@ -14,7 +15,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  background: url('./Images/landing-bg.jpg') no-repeat;
+  background: url("./Images/landing-bg.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -31,7 +32,7 @@ header {
   margin: 50px 5px;
   padding: 40px;
   background-color: var(--grey);
-  border: 1px solid rgba(50,50,50,1);
+  border: 1px solid rgba(50, 50, 50, 1);
 }
 
 .blurb {
@@ -40,7 +41,7 @@ header {
   margin: 40px;
   width: 250px;
   background-color: var(--grey);
-  border: 1px solid rgba(50,50,50,1);
+  border: 1px solid rgba(50, 50, 50, 1);
 }
 
 .blurb h4 {
@@ -66,7 +67,8 @@ form {
   padding: 20px;
 }
 
-input, .form__input {
+input,
+.form__input {
   font-size: 1.2em;
   padding: 5px;
 }
@@ -84,26 +86,128 @@ input, .form__input {
   margin: 1.2em 0;
 }
 
+/**************************
+Preview Styles
+**************************/
+.preview__header {
+  grid-area: header;
+}
+
+.info {
+  grid-area: info;
+}
+
+.skills {
+  grid-area: skills;
+  text-align: right;
+}
+
+.education {
+  grid-area: education;
+  text-align: right;
+}
+
+.work-experience {
+  grid-area: work-experience;
+}
+
 .preview {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "header header"
+    "info profile"
+    "skills work-experience"
+    "education work-experience";
   margin: 20px;
   padding: 15px;
   border: 1px solid black;
 }
 
-.preview__column {
-  border: 1px solid red;
-}
-
 .preview__header {
   text-align: center;
+  padding: 30px;
+  font-family: "Merienda", cursive;
+  font-size: 4rem;
+  font-weight: bold;
 }
+
+.info,
+.skills,
+.education,
+.profile,
+.work-experience {
+  padding: 20px;
+}
+
+/* Grey Border */
+.preview__header {
+  border-bottom: 4px solid var(--darkGrey);
+}
+
+.info, .skills, .profile {
+  border-bottom: 4px solid var(--darkGrey);
+}
+
+.info, .skills, .education {
+  border-right: 4px solid var(--darkGrey);
+}
+
+/*****************/
+
+
 
 .preview__subheading {
   text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.work-experience__position {
+  padding-bottom: 25px;
+}
+
+.work-experience__title, .education__title {
+  padding-bottom: 5px;
+}
+
+.work-experience__compDate {
+  padding-bottom: 15px;
+}
+
+.work-experience ul {
+  margin-left: 1em;
+  padding-inline-start: 1em;
+}
+
+.work-experience li {
+  padding-top: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info__value {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fas, .fab {
+  margin-left: 10px;
+  font-size: 2rem;
+}
+
+.skills__list {
+  list-style-type: none;
+  line-height: 1.8rem;
 }
 
 /* use this to block out all the other content on other pages when printed */
-@media print { 
+@media print {
   .noPrint {
     display: none;
   }
