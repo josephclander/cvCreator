@@ -84,3 +84,31 @@ input, .form__input {
   margin: 1.2em 0;
 }
 
+.preview {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.preview__column {
+  border: 1px solid red;
+}
+
+.preview__header {
+  text-align: center;
+}
+
+.preview__subheading {
+  text-transform: uppercase;
+}
+
+/* use this to block out all the other content on other pages when printed */
+@media print { 
+  .noPrint {
+    display: none;
+  }
+}
+
+/* size: A4; 
+  apparently this is experimental across browsers
+*/

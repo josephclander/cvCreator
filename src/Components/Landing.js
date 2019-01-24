@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Landing extends Component {
     render() {
         return (
-            <div className="landing">
+            <div className="landing noPrint">
                 <header>
                     <h4>Produced by Joseph Lander</h4>
                 </header>

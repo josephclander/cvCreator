@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Input extends Component {
   render() {
     return (
-      <div className="input">
+      <div className="input noPrint">
         <h1 className="input__header">Input</h1>
         <p className="input__instructions">
           Enter your details below and then scroll on to see how your CV is
