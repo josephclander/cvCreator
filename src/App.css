@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+/******************
+Landing Page
+******************/
+
 .landing {
   display: flex;
   flex-direction: column;
@@ -48,6 +52,10 @@ header {
   margin-bottom: 1.1rem;
 }
 
+/******************
+Input Page
+******************/
+
 .input {
   margin: 50px 20px;
 }
@@ -86,9 +94,28 @@ input,
   margin: 1.2em 0;
 }
 
-/**************************
-Preview Styles
-**************************/
+/******************
+Preview page
+******************/
+
+/* Grey Border */
+.preview__header {
+  border-bottom: 4px solid var(--darkGrey);
+}
+
+.info, .skills, .profile {
+  border-bottom: 4px solid var(--darkGrey);
+}
+
+.info, .skills, .education {
+  border-right: 4px solid var(--darkGrey);
+}
+/*****************/
+
+/*****************
+Grid Setup
+*****************/
+
 .preview__header {
   grid-area: header;
 }
@@ -124,6 +151,20 @@ Preview Styles
   padding: 15px;
   border: 1px solid black;
 }
+/*****************/
+
+.label {
+  position: absolute;
+  top: 100vh;
+  left: 10px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: 10px;
+  transform: rotate(-25deg);
+  font-size: 1.6rem;
+  border: 1px solid darkblue;
+  background: lightblue;
+}
 
 .preview__header {
   text-align: center;
@@ -140,23 +181,6 @@ Preview Styles
 .work-experience {
   padding: 20px;
 }
-
-/* Grey Border */
-.preview__header {
-  border-bottom: 4px solid var(--darkGrey);
-}
-
-.info, .skills, .profile {
-  border-bottom: 4px solid var(--darkGrey);
-}
-
-.info, .skills, .education {
-  border-right: 4px solid var(--darkGrey);
-}
-
-/*****************/
-
-
 
 .preview__subheading {
   text-transform: uppercase;

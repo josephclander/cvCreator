@@ -4,6 +4,7 @@ class Preview extends Component {
   render() {
     return (
       <div className="preview">
+        <div className="label noPrint">Example</div>
         <div className="preview__header border">Joseph Lander</div>
         <div className="info">
           <div class="info__value">
