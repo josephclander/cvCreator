@@ -8,12 +8,12 @@ class Preview extends Component {
         <div className="preview__header border">{this.props.data.fullName}</div>
         <div className="info">
           <div class="info__value">
-            <p className="phone">+1-347-517-6347</p>
-            <i class="fas fa-phone-square" />
-          </div>
-          <div class="info__value">
             <p className="email">josephclander@gmail.com</p>
             <i class="fas fa-envelope-square" />
+          </div>
+          <div class="info__value">
+            <p className="phone">+1-347-517-6347</p>
+            <i class="fas fa-phone-square" />
           </div>
           <div class="info__value">
             <p className="linkedin">/josephclander</p>
