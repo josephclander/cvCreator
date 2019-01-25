@@ -16,12 +16,10 @@ class Input extends Component {
           <h3 className="form__subheader">Contact</h3>
           <div class="form__container">
             <label>
-              First Name:
-              <input type="text" name="firstName" />
-            </label>
-            <label>
-              Last Name:
-              <input type="text" name="lastName" />
+              Full Name:
+              <input type="text" name="fullName" 
+                value={this.props.data.fullName} 
+                onChange={this.props.handleChange} />
             </label>
             <label>
               Email:

@@ -5,7 +5,7 @@ class Preview extends Component {
     return (
       <div className="preview">
         <div className="label noPrint">Example</div>
-        <div className="preview__header border">Joseph Lander</div>
+        <div className="preview__header border">{this.props.data.fullName}</div>
         <div className="info">
           <div class="info__value">
             <p className="phone">+1-347-517-6347</p>
