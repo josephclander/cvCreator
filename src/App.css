@@ -56,12 +56,32 @@ header {
 Input Page
 ******************/
 
+.form__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .input {
   margin: 50px 20px;
 }
 
-.input__header {
+.input__header_container {
+  background-color: lightblue;
+  padding: 20px 0;
   margin-bottom: 1.1rem;
+}
+
+.input__header {
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+.input__instructions {
+  text-align: justify;
+  line-height: 1.6rem;
+  width: 500px;
+  margin: 0 auto;
 }
 
 input {
