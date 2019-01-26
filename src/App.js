@@ -22,7 +22,7 @@ class App extends Component {
       yearFrom: "1999",
       yearTo: "2002",
       profile:
-        "A previous deputy head of Mathematics and head of A-Level Mathematics, for one of the largest secondary schools, in the top 100 schools, in the UK. 13 years experience leading large teams of experts to educate cohorts of 300+ students. Always staying aware of government proposed changes to education, ensuring teams were trained for new content and the curriculum was delivered seamlessly. Innovative techniques and technologies were used to enpower students and teachers alike to make progress.",
+        "A previous deputy head of Mathematics and head of A-Level Mathematics, for one of the largest secondary schools, in the top 100 schools, in the UK. 13 years experience leading large teams of experts to educate cohorts of 300+ students. Always being aware of government proposed changes to education, ensuring teams were trained for new content and the curriculum was delivered seamlessly. Innovative techniques and technologies were used to empower students and teachers alike to make progress.",
       jobTitle1: "Deputy Head of Mathematics",
       company1: "Graveney School",
       yearFromPos1: "2014",
