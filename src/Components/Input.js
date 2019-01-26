@@ -59,6 +59,7 @@ class Input extends Component {
             <input
               type="text"
               name="skill1"
+              maxLength="20"
               placeholder="1"
               value={this.props.data.skill1}
               onChange={this.props.handleChange}
@@ -66,6 +67,7 @@ class Input extends Component {
             <input
               type="text"
               name="skill2"
+              maxLength="20"
               placeholder="2"
               value={this.props.data.skill2}
               onChange={this.props.handleChange}
@@ -73,6 +75,7 @@ class Input extends Component {
             <input
               type="text"
               name="skill3"
+              maxLength="20"
               placeholder="3"
               value={this.props.data.skill3}
               onChange={this.props.handleChange}
@@ -80,6 +83,7 @@ class Input extends Component {
             <input
               type="text"
               name="skill4"
+              maxLength="20"
               placeholder="4"
               value={this.props.data.skill4}
               onChange={this.props.handleChange}
@@ -87,6 +91,7 @@ class Input extends Component {
             <input
               type="text"
               name="skill5"
+              maxLength="20"
               placeholder="5"
               value={this.props.data.skill5}
               onChange={this.props.handleChange}
