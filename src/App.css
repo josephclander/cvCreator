@@ -96,18 +96,24 @@ form {
 }
 
 input,
-.form__input {
+.form__input, .form__input-small {
   font-size: 1.2em;
   padding: 5px;
 }
 
+.form__input, .form__input-small {
+  width: 80vw;
+}
 .input__instructions {
   margin-bottom: 1.1em;
 }
 
 .form__input {
-  width: 80vw;
   min-height: 150px;
+}
+
+.form__input-small {
+  min-height: 50px;
 }
 
 .form__subheader {

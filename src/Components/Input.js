@@ -204,7 +204,7 @@ class Input extends Component {
               Bullet Point 1:
               <br />
               <textarea
-                className="form__input"
+                className="form__input-small"
                 name="pos1bullet1"
                 id="pos1info"
                 value={this.props.data.pos1bullet1}
@@ -215,7 +215,7 @@ class Input extends Component {
               Bullet Point 2:
               <br />
               <textarea
-                className="form__input"
+                className="form__input-small"
                 name="pos1bullet2"
                 id="pos1info"
                 value={this.props.data.pos1bullet2}
@@ -281,7 +281,7 @@ class Input extends Component {
               Bullet Point 1:
               <br />
               <textarea
-                className="form__input"
+                className="form__input-small"
                 name="pos2bullet1"
                 id="pos2info"
                 value={this.props.data.pos2bullet1}
@@ -292,7 +292,7 @@ class Input extends Component {
               Bullet Point 2:
               <br />
               <textarea
-                className="form__input"
+                className="form__input-small"
                 name="pos2bullet2"
                 id="pos2info"
                 value={this.props.data.pos2bullet2}
