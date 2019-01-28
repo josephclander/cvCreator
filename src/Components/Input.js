@@ -96,6 +96,22 @@ class Input extends Component {
               value={this.props.data.skill5}
               onChange={this.props.handleChange}
             />
+            <input
+              type="text"
+              name="skill6"
+              maxLength="20"
+              placeholder="6"
+              value={this.props.data.skill6}
+              onChange={this.props.handleChange}
+            />
+            <input
+              type="text"
+              name="skill7"
+              maxLength="20"
+              placeholder="7"
+              value={this.props.data.skill7}
+              onChange={this.props.handleChange}
+            />
           </div>
           <br />
           <h3 className="form__subheader">Education</h3>

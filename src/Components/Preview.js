@@ -28,6 +28,8 @@ class Preview extends Component {
             <li>{this.props.data.skill3}</li>
             <li>{this.props.data.skill4}</li>
             <li>{this.props.data.skill5}</li>
+            <li>{this.props.data.skill6}</li>
+            <li>{this.props.data.skill7}</li>
           </ul>
         </div>
         <div className="education">
@@ -52,16 +54,10 @@ class Preview extends Component {
               {this.props.data.company1} / {this.props.data.yearFromPos1} -{" "}
               {this.props.data.yearToPos1}
             </h6>
-            <p>
-              {this.props.data.pos1info}
-            </p>
+            <p>{this.props.data.pos1info}</p>
             <ul>
-              <li>
-                {this.props.data.pos1bullet1}
-              </li>
-              <li>
-                {this.props.data.pos1bullet2}
-              </li>
+              <li>{this.props.data.pos1bullet1}</li>
+              <li>{this.props.data.pos1bullet2}</li>
             </ul>
           </div>
           <div className="work-experience__position">
@@ -69,18 +65,13 @@ class Preview extends Component {
               {this.props.data.jobTitle2}
             </h5>
             <h6 className="work-experience__compDate">
-              {this.props.data.company2} / {this.props.data.yearFromPos2} - {this.props.data.yearToPos2}
+              {this.props.data.company2} / {this.props.data.yearFromPos2} -{" "}
+              {this.props.data.yearToPos2}
             </h6>
-            <p>
-              {this.props.data.pos2info}
-            </p>
+            <p>{this.props.data.pos2info}</p>
             <ul>
-              <li>
-                {this.props.data.pos2bullet1}
-              </li>
-              <li>
-                {this.props.data.pos2bullet2}
-              </li>
+              <li>{this.props.data.pos2bullet1}</li>
+              <li>{this.props.data.pos2bullet2}</li>
             </ul>
           </div>
         </div>

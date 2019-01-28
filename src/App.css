@@ -115,7 +115,7 @@ input,
 }
 
 .form__input-small {
-  min-height: 50px;
+  min-height: 80px;
 }
 
 .form__subheader {
@@ -126,6 +126,9 @@ label {
   margin-bottom: 1rem;
 }
 
+.skillCheckbox {
+  align-self: center;
+}
 /******************
 Preview page
 ******************/

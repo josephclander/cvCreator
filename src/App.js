@@ -17,6 +17,8 @@ class App extends Component {
       skill3: "Planning",
       skill4: "Team player",
       skill5: "Efficient",
+      skill6: '',
+      skill7: '',
       degreeTitle: "Mathematics with Actuarial Studies BSc",
       institution: "Southampton University",
       yearFrom: "1999",
