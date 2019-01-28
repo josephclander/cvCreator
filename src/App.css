@@ -63,7 +63,8 @@ Input Page
 }
 
 .input {
-  margin: 50px 20px;
+  max-width: 1000px;
+  margin: 50px auto;
 }
 
 .input__header_container {
@@ -103,6 +104,7 @@ input,
 
 .form__input, .form__input-small {
   width: 80vw;
+  max-width: 800px;
 }
 .input__instructions {
   margin-bottom: 1.1em;
@@ -169,6 +171,7 @@ Grid Setup
 }
 
 .preview {
+  max-width: 1000px;
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: repeat(4, auto);
@@ -177,7 +180,7 @@ Grid Setup
     "info profile"
     "skills work-experience"
     "education work-experience";
-  margin: 20px;
+  margin: 20px auto;
   padding: 15px;
   border: 1px solid black;
 }
