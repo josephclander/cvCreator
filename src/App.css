@@ -120,6 +120,10 @@ input,
   margin: 1.2em 0;
 }
 
+label {
+  margin-bottom: 1rem;
+}
+
 /******************
 Preview page
 ******************/

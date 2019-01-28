@@ -7,17 +7,17 @@ class Preview extends Component {
         <div className="label noPrint">Example</div>
         <div className="preview__header border">{this.props.data.fullName}</div>
         <div className="info">
-          <div class="info__value">
+          <div className="info__value">
             <p className="email">{this.props.data.email}</p>
-            <i class="fas fa-envelope-square" />
+            <i className="fas fa-envelope-square" />
           </div>
-          <div class="info__value">
+          <div className="info__value">
             <p className="phone">{this.props.data.phone}</p>
-            <i class="fas fa-phone-square" />
+            <i className="fas fa-phone-square" />
           </div>
-          <div class="info__value">
+          <div className="info__value">
             <p className="linkedin">/{this.props.data.linkedIn}</p>
-            <i class="fab fa-linkedin" />
+            <i className="fab fa-linkedin" />
           </div>
         </div>
         <div className="skills">
@@ -44,7 +44,7 @@ class Preview extends Component {
         </div>
         <div className="work-experience">
           <h2 className="preview__subheading">Experience</h2>
-          <div class="work-experience__position">
+          <div className="work-experience__position">
             <h5 className="work-experience__title">
               {this.props.data.jobTitle1}
             </h5>
@@ -64,7 +64,7 @@ class Preview extends Component {
               </li>
             </ul>
           </div>
-          <div class="work-experience__position">
+          <div className="work-experience__position">
             <h5 className="work-experience__title">
               {this.props.data.jobTitle2}
             </h5>

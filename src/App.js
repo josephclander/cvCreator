@@ -38,11 +38,11 @@ class App extends Component {
       yearFromPos2: "2008",
       yearToPos2: "2018",
       pos2info:
-        "In my first few years I took the initiative to improve the department's provision of ICT for shared data and resources for teachers and created a web-page to keep people updated with new additions. This led to delivering whole school presentations of how to manage and share content and being brought into the IT department and selected to test the first ever CMS being rolled out to schools across the UK.",
+        "In my first few years, I took the initiative to improve the department's provision of ICT for shared data and resources for teachers and created a web-page to keep people updated with new additions. This led to delivering whole school presentations on how to manage and share content and being brought into the IT department and selected to test the first-ever CMS being rolled out to schools across the UK.",
       pos2bullet1:
-        "I learned of Agile philosphy and completed trials with students to implement scrum techniques. Thus giving me insight into the benefits and struggles of working under this ethos.",
+        "I learned of Agile philosophy and completed trials with students to implement scrum techniques. Thus giving me insight into the benefits and struggles of working under this ethos.",
       pos2bullet2:
-        'Tests showed student attention spans didn\'t stretch even up to 10 minutes when self studying from videos so I created my own YouTube Channel "miniMaths" with concepts explained in under 3 minutes.'
+        'Tests showed student attention spans didn\'t stretch even up to 10 minutes when self-studying from videos so I created my own YouTube Channel "miniMaths" with concepts explained in under 3 minutes.'
     };
     this.handleChange = this.handleChange.bind(this);
   }

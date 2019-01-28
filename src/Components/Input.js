@@ -4,7 +4,7 @@ class Input extends Component {
   render() {
     return (
       <div className="input noPrint">
-        <div class="input__header_container">
+        <div className="input__header_container">
           <h1 className="input__header">Input</h1>
           <p className="input__instructions">
             Enter your details below to update the CV with your own details.
@@ -14,7 +14,7 @@ class Input extends Component {
         </div>
         <form action="">
           <h3 className="form__subheader">Contact</h3>
-          <div class="form__container">
+          <div className="form__container">
             <label>
               Full Name:
               <input
@@ -55,7 +55,7 @@ class Input extends Component {
           <br />
           <h3 className="form__subheader">Main Skills</h3>
           <p>e.g. Forward Thinking, Team Player, Resourceful</p>
-          <div class="form__container">
+          <div className="form__container">
             <input
               type="text"
               name="skill1"
@@ -99,7 +99,7 @@ class Input extends Component {
           </div>
           <br />
           <h3 className="form__subheader">Education</h3>
-          <div class="form__container">
+          <div className="form__container">
             <label>
               Degree Title:
               <input
@@ -142,6 +142,7 @@ class Input extends Component {
           </div>
           <br />
           <h3 className="form__subheader">Profile</h3>
+          <p>{this.props.data.profile.length} / 500 MAX</p>
           <textarea
             className="form__input"
             name="profile"
@@ -149,11 +150,12 @@ class Input extends Component {
             placeholder="Use this space to give a brief decription of what makes you a good choice for the company you are applying for."
             value={this.props.data.profile}
             onChange={this.props.handleChange}
+            maxLength="500"
           />
           <br />
           <h3 className="form__subheader">Experience</h3>
           <h6>Position 1:</h6>
-          <div class="form__container">
+          <div className="form__container">
             <label>
               Job Title:
               <input
@@ -194,8 +196,8 @@ class Input extends Component {
               />
             </label>
             <label>
-              Brief Description:
-              <br />
+              Brief Description:{" "}
+              <p>{this.props.data.pos1info.length} / 500 MAX</p>
               <textarea
                 className="form__input"
                 name="pos1info"
@@ -203,11 +205,11 @@ class Input extends Component {
                 placeholder="Breifly explain your achievements at this post. State how this experience would be an asset to the company you are applying for."
                 value={this.props.data.pos1info}
                 onChange={this.props.handleChange}
+                maxLength="500"
               />
             </label>
             <label>
-              Bullet Point 1:
-              <br />
+              Bullet Point 1: <p>{this.props.data.pos1bullet1.length} / 200</p>
               <textarea
                 className="form__input-small"
                 name="pos1bullet1"
@@ -217,8 +219,7 @@ class Input extends Component {
               />
             </label>
             <label>
-              Bullet Point 2:
-              <br />
+              Bullet Point 2: <p>{this.props.data.pos1bullet2.length} / 200</p>
               <textarea
                 className="form__input-small"
                 name="pos1bullet2"
@@ -230,7 +231,7 @@ class Input extends Component {
           </div>
           <br />
           <h6>Position 2:</h6>
-          <div class="form__container">
+          <div className="form__container">
             <label>
               Job Title:
               <input
@@ -271,8 +272,8 @@ class Input extends Component {
               />
             </label>
             <label>
-              Brief Description
-              <br />
+              Brief Description{" "}
+              <p>{this.props.data.pos2info.length} / 500 MAX</p>
               <textarea
                 className="form__input"
                 name="pos2info"
@@ -280,11 +281,11 @@ class Input extends Component {
                 placeholder="Breifly explain your achievements at this post. State how this experience would be an asset to the company you are applying for."
                 value={this.props.data.pos2info}
                 onChange={this.props.handleChange}
+                maxLength="500"
               />
             </label>
             <label>
-              Bullet Point 1:
-              <br />
+              Bullet Point 1: <p>{this.props.data.pos2bullet1.length} / 200</p>
               <textarea
                 className="form__input-small"
                 name="pos2bullet1"
@@ -294,8 +295,7 @@ class Input extends Component {
               />
             </label>
             <label>
-              Bullet Point 2:
-              <br />
+              Bullet Point 2: <p>{this.props.data.pos2bullet2.length} / 200</p>
               <textarea
                 className="form__input-small"
                 name="pos2bullet2"
