@@ -1,6 +1,6 @@
 :root {
   --grey: rgba(240, 240, 240, 0.6);
-  --darkGrey: rgba(210, 210, 210, 1);
+  --darkGrey: #d2d2d2;
 }
 
 * {
@@ -133,17 +133,18 @@ label {
 Preview page
 ******************/
 
-/* Grey Border */
-.preview__header {
-  border-bottom: 4px solid var(--darkGrey);
+/* Initial Grey Border */
+
+.borderColor {
+  border-color: var(--darkGrey);
 }
 
-.info, .skills, .profile {
-  border-bottom: 4px solid var(--darkGrey);
+.borderBottom {
+  border-bottom: 4px solid;
 }
 
-.info, .skills, .education {
-  border-right: 4px solid var(--darkGrey);
+.borderRight {
+  border-right: 4px solid;
 }
 /*****************/
 

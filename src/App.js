@@ -8,6 +8,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      border: "#d2d2d2",
+      title: "#000000",
       fullName: "Joseph Lander",
       email: "josephclander@gmail.com",
       phone: "+1-347-517-6347",
@@ -17,8 +19,8 @@ class App extends Component {
       skill3: "Planning",
       skill4: "Team player",
       skill5: "Efficient",
-      skill6: '',
-      skill7: '',
+      skill6: "",
+      skill7: "",
       degreeTitle: "Mathematics with Actuarial Studies BSc",
       institution: "Southampton University",
       yearFrom: "1999",

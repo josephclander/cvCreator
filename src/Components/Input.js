@@ -13,6 +13,27 @@ class Input extends Component {
           </p>
         </div>
         <form action="">
+          <div className="input__variables">
+            <h3 className="form_subheader">Appearance Options</h3>
+            <div>
+              <label htmlFor="border">Border Colour</label>
+              <input
+                type="color"
+                name="border"
+                id="border"
+                value={this.props.data.border}
+                onChange={this.props.handleChange}
+              />
+              <label htmlFor="accent">Title Colour</label>
+              <input
+                type="color"
+                name="title"
+                id="title"
+                value={this.props.data.title}
+                onChange={this.props.handleChange}
+              />
+            </div>
+          </div>
           <h3 className="form__subheader">Contact</h3>
           <div className="form__container">
             <label>
