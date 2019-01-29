@@ -29,6 +29,18 @@ header {
   background-color: var(--grey);
 }
 
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.reactLogo {
+  height: 50px;
+  width: 50px;
+}
+
 .siteName {
   font-size: 4rem;
   text-align: center;
