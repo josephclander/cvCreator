@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CV Creator
 
-## Available Scripts
+This is my first creation with React, specifically the create-react-app. My intention is to showcase some of the skills and tools I have picked up from tutorials. Also it is a shameless way to present a short CV of mine.
 
-In the project directory, you can run:
+## USER: How to Guide
 
-### `npm start`
+This CV Creator sets out to make it easy to produce a very quick CV with the major headaches of styling, layout and content already figured out for the user. As you scroll down the page, you will be presented with an example with my content already displayed to give a sense of what you need to enter in terms of content and what you will get at the end. 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Inputting Data
+After this you will reach the input section. In this area, you will need to update the content with your information. If you wish, you can scroll back up to the example at any time to see how this will look in your final output.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+#### Colour Options
+Further options have been included so that you can change the colours of the dividing borders and the headings. Simply click on the relevant colour selector and scroll back up to see the results.
 
-### `npm test`
+#### Saving your CV
+Once you are satisfied with the layout of your CV, press your short-cut keys to print. The document has been styled to remove all other elements with the exception of your CV. At this stage when you see the print preview you may wish to return to tweak some details but note that it may be necessary to scale to fit the document and/or remove any added headers or footers. Finally print or save to pdf.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Developer: Use of React
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+In this work I created the folder structure and components to break the site down into the App, Landing Page, Preview and Input sections of the single page app. After building the basic structure and styling, I researched the best methods for setting print styling. Seeing that further options with "@pages" are not precise on any browser, I chose to design the page to fit the screen for medium to large monitors (excluding mobile). 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Once this was complete, I wanted to implement the tools of React. I set out to try and add the following features:
 
-### `npm run eject`
+* Input fields linked to state to automatically update in the preview section.
+* Addition of a character count for the larger text input areas.
+* Options to add extra skills.
+* Use of API to include profile ID from the users LinkedIn account.
+* Options to allow some changes in the styling of the page.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Reflection
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Overall I met these goals. Input fields do update using state and use of assignment destructuring gave it a neat handleChange method. The character count also managed to fit easily with the use of state. I initially played with creating buttons, then checkboxes to add extra skills, however, it seemed superfluous as I was easily able to add two more empty input fields that don't rended anything to the page. The API integration was a major area of disappointment. I thought to include this feature as it is possible to use the github API without any authorisation tokens for basic public information. Unfortunately I found that this is not the case with LinkedIn. Also other popular social media accounts can do this but only with the users specific id number, not just their username. The page styling worked but I would have wished for a function to find the elements to be styled instead of the use of inline, dynamic styling. My attempt at this changed the styles but only at the previous state, meaning the colours change was always one step behind. For this reason I chose inline styles in the neatest way I could write.
